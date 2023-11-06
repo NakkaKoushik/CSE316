@@ -23,7 +23,7 @@ void faculty_Queue(int no_of_process, int quantum_time) {
         faculty_Process[count].remaining = faculty_Process[count].burst_time;
     }
 
-    // Implement Round Robin scheduling logic
+    
     int time = 0;
     int remaining_processes = no_of_process;
     int current_process = 0;
@@ -43,7 +43,7 @@ void faculty_Queue(int no_of_process, int quantum_time) {
         current_process = (current_process + 1) % no_of_process;
     }
 
-    // Print the output
+    
     printf("\nFaculty Queue Output:\n");
     printf("Process Name\tArrival Time\tBurst Time\tCompletion Time\n");
     for (count = 0; count < no_of_process; count++) {
@@ -69,7 +69,6 @@ void student_Queue(int no_of_process, int quantum_time) {
         student_Process[count].remaining = student_Process[count].burst_time;
     }
 
-    // Implement Round Robin scheduling logic
     int time = 0;
     int remaining_processes = no_of_process;
     int current_process = 0;
@@ -89,7 +88,6 @@ void student_Queue(int no_of_process, int quantum_time) {
         current_process = (current_process + 1) % no_of_process;
     }
 
-    // Print the output
     printf("\nStudent Queue Output:\n");
     printf("Process Name\tArrival Time\tBurst Time\tCompletion Time\n");
     for (count = 0; count < no_of_process; count++) {
